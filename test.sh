@@ -1,5 +1,198 @@
 #! /bin/bash
-date
+for((i = 1; i <= 5; i++))
+do
+	echo "这是第 $i 次调用"
+done
+
+#while :
+#do
+#	echo -n "输入 1 到 5 之间的数字:"
+#	read aNum
+#	case $aNum in
+#		1|2|3|4|5) echo "你输入的数字为 $aNum!"
+#		;;
+#		*) echo "你输入的数字不是 1 到 5 之间的!"
+#			continue
+#			echo "游戏结束"
+#		;;
+#	esac
+#done
+
+
+#while :
+#do
+#	echo -n "输入 1 到 5 之间的数字:"
+#	read aNum
+#	case $aNum in
+#		1|2|3|4|5) echo "你输入的数字为 $aNum!"
+#		;;
+#		*) echo "你输入的数字不是 1 到 5 之间的! 游戏结束"
+#			break
+#		;;
+#	esac
+#done
+
+#while :
+#do
+#	echo '输入 1 到 4 之间的数字:'
+#	echo '你输入的数字为:'
+#	read aNum
+#	case $aNum in
+#		1) echo '你选择了 1'
+#		;;
+#		2) echo '你选择了 2'
+#		;;
+#		3) echo '你选择了 3'
+#		;;
+#		4) echo '你选择了 4'
+#		;;
+#		*) echo '你没有输入 1 到 4 之间的数字'
+#		;;
+#	esac
+#done
+
+#a=10
+#b=20
+#if [ $a == $b ]
+#then
+#	echo "a 等于 b"
+#elif [ $a -gt $b ]
+#then
+#	echo "a 大于 b"
+#elif [ $a -lt $b ]
+#then
+#	echo "a 小于 b"
+#else
+#	echo "没有符合的条件"
+#fi
+#
+#printf "==================================\n"
+#
+#num1=$[2*3]
+#num2=$[1+5]
+#if test $[num1] -eq $[num2]
+#then
+#	echo "两个数字相等"
+#else
+#	echo "两个数字不相等"
+#fi
+#
+#printf "==================================\n"
+#
+#for loop in 1 2 3 4 5
+#do
+#	echo "The value is: $loop"
+#done
+#
+#printf "==================================\n"
+#
+#for str in 'This is a string'
+#do
+#	echo $str
+#done
+#
+#printf "==================================\n"
+#
+#int=1
+#while(( $int<=5 ))
+#do
+#	echo $int
+#	let "int++"
+#done
+#
+#printf "==================================\n"
+#
+#echo '按下 <CTRL-D> 退出'
+#echo -n '输入你最喜欢的网站名: '
+#while read FILM
+#do
+#	echo "是的！$FILM 是一个好网站"
+#done
+#
+#printf "==================================\n"
+#
+#a=0
+#until [ ! $a -lt 10 ]
+#do
+#	echo $a
+#	a=`expr $a + 1`
+#done
+
+
+
+#num1=100
+#num2=100
+#if test $[num1] -eq $[num2]
+#then
+#	echo '两个数相等!'
+#else
+#	echo '两个数不相等!'
+#fi
+#
+#printf "==================================\n"
+#
+#a=5
+#b=6
+#result=$[a+b]
+#echo "result 为: $result"
+#
+#printf "==================================\n"
+#
+#num1="ru1oob"
+#num2="runoob"
+#if test $num1 = $num2
+#then
+#	echo '两个字符串相等'
+#else
+#	echo '两个字符串不相等'
+#fi
+#
+#printf "==================================\n"
+#
+#cd /bin
+#if test -e ./bash
+#then
+#	echo '文件已存在!'
+#else
+#	echo '文件不存在!'
+#fi
+#
+#printf "==================================\n"
+#
+#cd /bin
+#if test -e ./notFile -o -e ./bash
+#then
+#	echo '至少有一个文件存在！'
+#else
+#	echo '两个文件都不存在'
+#fi
+
+
+
+#printf "%-10s %-8s %-4s\n" 姓名 性别 体重kg
+#printf "%-10s %-8s %-4.2f\n" 郭靖 男 66.1234
+#printf "%-10s %-8s %-4.2f\n" 杨过 男 48.6543
+#printf "%-10s %-8s %-4.2f\n" 郭芙 女 47.9876
+#
+#printf "==================================\n"
+#
+#printf "%d %s\n" 1 "abc"
+#printf '%d %s\n' 1 "abc"
+#printf %s abcdef
+#printf %s abc def
+#printf "%s\n" abc def
+#printf "%s %s %s\n" a b c d e f g h i j
+#printf "%s and %d \n"
+#
+#printf "==================================\n"
+#
+#printf "a string, no processing:<%s>\n" "A\nB"
+#printf "a string, no processing:<%b>\n" "A\nB"
+#printf "www.runoob.com \a"
+
+#printf "Hello, Shell\n"
+
+#date
 
 #echo "It is a test" > myfile  #结果定向至文件
 
